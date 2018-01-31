@@ -59,7 +59,6 @@ maintainer := "Michael Hamrah <m@hamrah.com>"
 
 dockerExposedPorts in Docker := Seq(1600)
 
-//dockerEntrypoint in Docker := Seq("sh", "-c", "CLUSTER_IP=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1 }'` bin/clustering $*")
 dockerEntrypoint in Docker := Seq("sh", "-c", "bin/clustering")
 
 dockerRepository := Some("mhamrah")
