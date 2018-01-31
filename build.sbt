@@ -57,9 +57,7 @@ libraryDependencies ++= Seq (
 
 maintainer := "Michael Hamrah <m@hamrah.com>"
 
-dockerExposedPorts in Docker := Seq(1600)
-
-dockerEntrypoint in Docker := Seq("sh", "-c", "bin/clustering")
+//dockerEntrypoint := Seq("sh", "-c", "bin/clustering")
 
 dockerRepository := Some("mhamrah")
 
