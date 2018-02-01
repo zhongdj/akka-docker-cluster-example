@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   seed:
-    image: mhamrah/clustering:0.3
+    image: 10.232.128.157:5000/yiguan/clustering:0.32
     ports:
       - target: 1600
         published: 1600
@@ -15,7 +15,7 @@ services:
       SEED_SIZE: 1
 
   c1:
-    image: mhamrah/clustering:0.3
+    image: 10.232.128.157:5000/yiguan/clustering:0.32
     environment:
       CLUSTER_PORT: 0
       CLUSTER_IP: ""
